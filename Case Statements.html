@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Magic 8-ball</title>
+    </head>
+    <body>
+        <script>
+
+            //Generate Random Number
+            let randomNumber= Math.random();
+            randomNumber= randomNumber*5;
+            RandomNumber= Math.floor(randomNumber);
+            //onsole.log(RandomNumber);
+
+
+            //Prompt user and Store input
+            let userPrompt= prompt("Type your quiz here","When is today?");
+             console.log(userPrompt); 
+
+            //Switch statements
+            switch(RandomNumber){
+                case 0:
+                    console.log("Yes, Definitely");
+                    break;
+                case 1:
+                    randomAnswer="Uuum, not really";
+                    break;
+                case 2:
+                    console.log("Almost there!");
+                    break;
+                case 3:
+                    console.log("What do you think?");
+                    break;
+                case 4:
+                    console.log("Can`t figure out right now");
+                    break;
+                case 5:
+                    console.log("Lucky bustard, right?");
+                    break;
+                            //default: 
+                            //randomAnswer="Oops! We can try again.";
+            }                           
+           
+        </script>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rock Paper Scissors Game</title>
+    </head>
+    <body>
+        <script>
+            //State Array
+            let choice= ["Rock", "Paper", "Scissors"];
+
+            //Computer Number
+            let computerNumber= Math.random();
+            computerNumber= computerNumber*3;
+            computerNumber= Math.floor(computerNumber);
+
+            //User Number
+            let userNumber= Math.random();
+            userNumber= userNumber*2;
+            userNumber= Math.floor(userNumber);
+
+            //Choices
+            let computerChoice= choice[computerNumber];
+            console.log("Computer: ",computerChoice);
+
+            let userChoice= choice[userNumber];
+            console.log("User: ",userChoice);
+
+            //Cases
+            if (computerNumber==userNumber){
+                console.log("It`s a tie");
+            }else 
+            if(computerNumber==0 && userNumber==1 || 
+                computerNumber==1 && userNumber==2 ||
+                 computerNumber==2 && userNumber==0 ){
+                console.log("User Won!");
+            }else
+            {
+                console.log("Computer Won!");
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arrays</title>
+    </head>
+    <body>
+        <script>
+            let shopping_list = ["Milk","Bread","Apples"];
+            console.log(shopping_list);
+            shopping_list [1]= "Banana";
+            shopping_list.splice(1,0, "Eggs");
+            shopping_list.pop(shopping_list[-1]);
+            shopping_list.sort();
+            shopping_list.splice(3,0, "Carrots","Lettuce");
+            
+            let shopping_list1= ["Juice","Pop"];
+            let combined_list= shopping_list.concat(shopping_list1);
+             console.log(combined_list);
+             POPindex= combined_list.indexOf("Pop");
+             console.log(POPindex);
+
+        </script>
+    </body>
+</html>
